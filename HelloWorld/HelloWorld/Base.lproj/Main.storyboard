@@ -26,10 +26,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dac-ji-6wy">
                                 <rect key="frame" x="170" y="71" width="35" height="30"/>
                                 <state key="normal" title="Hello"/>
+                                <connections>
+                                    <action selector="helloSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CfY-gX-kEm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgc-Vr-XTR">
                                 <rect key="frame" x="169" y="111" width="36" height="30"/>
                                 <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oj0-lm-c8Z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -43,6 +49,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="A7z-dt-fD3" id="Quw-Ha-nwh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
